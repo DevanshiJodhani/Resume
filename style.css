@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Belanosima&family=Croissant+One&family=Exo:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Josefin+Sans:wght@100&family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Mooli&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Exo', sans-serif;
+}
+
+body{
+    background: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+}
+
+.content .left-side{
+    position: relative;
+    background: #00317f;
+    padding: 40px;
+}
+.profile-text{
+    margin-bottom: 25px;
+}
+.img-box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.img-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+/* ======= contact-style============ */
+
+.contact-info{
+    padding-top: 10px;
+}
+
+.tittle{
+    color: #cfd0d1;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #666464;
+}
+ul li{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 10px;
+}
+
+ul li .icons-name{
+    margin-block: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li .text{
+    font-size: 15px;
+    font-weight: 300;
+    color: #c4c4c4;
+}
+
+/* ============eduction-style =========== */
+
+.eduction span{
+    display: flex;
+    color: #c4c4c4;
+    font-size: 15px;
+}
+
+.eduction .year{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ===========right side ========== */
+.content .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.profile-info-text h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.profile-info-text span{
+    font-size: 40px;
+}
+
+.profile-info-text .sub-text{
+    font-size: 25px;
+}
+
+.profile-info-text p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666464;
+    margin-bottom: 25px;
+}
+
+/* ==================== experiance-style ==================== */
+
+.experiance-tittle{
+    font-size: 25px;
+    color: #00317f;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.experiance-info{
+    padding-top: 10px;
+}
+
+.experiance-info .year{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.experiance-info .position{
+    font-size: 16px;
+    font-weight: 300;
+    color: #312e2e;
+}
+
+.experiance-info .company{
+    color: #666464;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ================ skills-style ============== */
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 22px;
+}
+
+.skills .box h4{
+    font-weight: 500;
+    color: #666464;
+    text-transform: uppercase;
+}
+
+.skills .box .progress{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #e5e3e3;
+    overflow: hidden;
+}
+
+.skills .box .progress div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #666464;
+}
+
+/* =========== refrence-style ============== */
+
+.refrence{
+    position: relative;
+    width: 100%;
+}
+
+.refrence-info{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.refrence-info h4{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666464;
+    margin-bottom: 15px;
+}
+
+.refrence-info span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #312e2e;
+}
+
+@media (max-width: 1000px){
+    .content{
+        margin: 50px;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
